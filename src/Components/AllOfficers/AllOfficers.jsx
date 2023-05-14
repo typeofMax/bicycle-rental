@@ -90,7 +90,7 @@ export const AllOfficers = ({ setApproved }) => {
       <div className="officerContainer">
         <ol className="officers">
           {(loading && <div className="loading">loading...</div>) ||
-             info.map((worker) => (
+            info.map((worker) => (
               <div key={worker._id} className="approve">
                 <Link
                   onClick={() => setDetail(!detail)}
@@ -98,7 +98,7 @@ export const AllOfficers = ({ setApproved }) => {
                   to={`/officers/${worker._id}`}
                 >
                   <li>{worker.email}</li>
-                </Link> 
+                </Link>
               </div>
             ))}
         </ol>

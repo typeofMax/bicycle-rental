@@ -39,18 +39,15 @@ export const Report = () => {
     e.preventDefault();
 
     axios
-      .post(
-        "https://sf-final-project-be.herokuapp.com/api/public/report",
-        {
-          ownerFullName: ownerFullName,
-          licenseNumber: licenseNumber,
-          type: type,
-          clientId: ' 188cd835-de75-4edf-b885-254854cf1aca ',
-          color: color,
-          date: date,
-          description: description,
-        }
-      )
+      .post("https://sf-final-project-be.herokuapp.com/api/public/report", {
+        ownerFullName: ownerFullName,
+        licenseNumber: licenseNumber,
+        type: type,
+        clientId: " 188cd835-de75-4edf-b885-254854cf1aca ",
+        color: color,
+        date: date,
+        description: description,
+      })
       .then((res) => {
         setLicenseNumber("");
         setOwnerFullName("");

@@ -22,7 +22,6 @@ export const Signin = ({
       )) ||
         (!admin && (
           <div style={{ marginTop: "90px" }} className="report">
-           
             <form className="formPublic" onSubmit={handleSubmit}>
               <h2>Авторизация</h2>
               <label>E-mail</label>

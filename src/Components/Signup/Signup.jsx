@@ -14,8 +14,7 @@ export const Signup = () => {
 
   const handleSubmit = (e) => {
     e.preventDefault();
-    
-    
+
     axios
       .post(
         "https://sf-final-project-be.herokuapp.com/api/auth/sign_up",

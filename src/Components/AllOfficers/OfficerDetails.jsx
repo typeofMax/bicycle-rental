@@ -45,7 +45,7 @@ export const OfficerDetails = ({ detail, setDetail, info, allWorkers }) => {
         console.log(err);
       });
   };
-  
+
   //удаляем сотрудника
   const handleDelete = (e) => {
     e.preventDefault();
@@ -59,15 +59,14 @@ export const OfficerDetails = ({ detail, setDetail, info, allWorkers }) => {
         }
       )
       .then((res) => {
-        allWorkers(); 
-        setDetail(!detail); 
+        allWorkers();
+        setDetail(!detail);
       })
       .catch((err) => {
         console.log(err);
       });
   };
 
-  
   return (
     <main className="details">
       <div className="businessCard">
@@ -127,8 +126,7 @@ export const OfficerDetails = ({ detail, setDetail, info, allWorkers }) => {
                 )}
                 <button className="delete" onClick={handleDelete}>
                   удалить
-                </button> 
-               
+                </button>
               </div>
             </form>
           </div>
